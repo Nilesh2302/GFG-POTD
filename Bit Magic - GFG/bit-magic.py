@@ -5,10 +5,8 @@ class Solution:
     def bitMagic(self, n : int, arr : List[int]) -> int:
         # code here
         cnt = 0
-        m = n//2
-        i = 0
         j = n-1
-        for i in range(m):
+        for i in range(n//2):
             if arr[i]!=arr[j]:
                 cnt += 1
                 
